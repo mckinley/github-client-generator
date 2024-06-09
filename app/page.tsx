@@ -50,6 +50,9 @@ AUTH_GITHUB_SECRET=${secret}`
           callback_urls: ["http://localhost:3000/api/auth/callback/github"],
           description: "An Auth.js development app, generated via authjs.dev",
           request_oauth_on_install: true,
+          default_permissions: {
+            "emails": "read",
+          }
         } satisfies Manifest)}
       />
       <button className="flex items-center gap-2 p-2 m-2 bg-gray-700 rounded-md border text-white text-xs hover:bg-gray-500 transition-colors focus:bg-black">
